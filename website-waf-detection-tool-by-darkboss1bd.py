@@ -1,11 +1,10 @@
-# By: Jey Zeta
+import random
 import requests
 import re
 import sys
 import os
 from utils.banner import generar_banner, mostrar_ayuda_completa
 from termcolor import colored
-import emoji
 
 VERSION = "1.0.0"
 
@@ -94,12 +93,14 @@ def show_waf_list():
     print(generar_banner())  
     print(colored("Supported WAFs:", "green"))
     
-    fire_emoji = "\033[1;35m🔥\033[0m"  # ANSI code for purple fire emoji
+    # Replaced emoji with ANSI fire symbol (no emoji module needed)
+    fire_symbol = "\033[1;35m🔥\033[0m"
 
     for waf in waf_list:
-        print(f"{fire_emoji} {waf}")
+        print(f"{fire_symbol} {waf}")
 
 if __name__ == "__main__":
+    # Set terminal title (no emoji module used)
     os.system("printf '\033]2;WAF dt v1.0.0 🧱\\a'")
     
     if len(sys.argv) > 1:
@@ -117,10 +118,10 @@ if __name__ == "__main__":
         mostrar_ayuda_completa()
 
 # ———————————————————————————————————————————————————————————————
-# 🔐 Developed by Darkboss1bd | Security Researcher & Tool Builder
+# 💀 DARKBOSS1BD — Elite Cyber Operator
 #
-# 💬 Contact Me on Telegram: https://t.me/darkvaiadmin
-# 🌐 Visit My Website for Premium Tools & Keys: https://serialkey.top/
+# 📬 Telegram: https://t.me/darkvaiadmin
+# 🌐 Official Site: https://serialkey.top/
 #
-# 👨‍💻 Ethical Hacking | WAF Detection | Software Licensing Solutions
+# 🔓 WAF Detection • Premium Keys • Ethical Hacking Tools
 # ———————————————————————————————————————————————————————————————
