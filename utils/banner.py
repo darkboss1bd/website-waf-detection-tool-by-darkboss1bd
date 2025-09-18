@@ -1,3 +1,5 @@
+# utils/banner.py — emoji module removed
+
 import random
 
 colores = ["red", "green", "yellow", "blue", "magenta", "cyan", "white", "orange"]
@@ -42,7 +44,7 @@ _(())\_)())\ _ )\ (_))_|
         from termcolor import colored
         return colored(full_banner, color, attrs=["bold"])
 
-uso = "\033[1;36mUsage:\033[0m\n  python3 waf_detection_tool.py [option]"
+uso = "\033[1;36mUsage:\033[0m\n  python3 website-waf-detection-tool-by-darkboss1bd.py [option]"
 
 opciones = """
 \033[1;35m🔥 l      \033[0m\033[1;37mShow list of supported WAFs.\033[0m
@@ -51,19 +53,10 @@ opciones = """
 \033[1;35m🔥 [URL]  \033[0m\033[1;37mAnalyze the provided URL to detect a WAF.\033[0m
 """
 
-ejemplo = "\033[1;36mExample:\033[0m\n  python3 website-waf-detection-tool-by-darkboss1bd.py https://example.com  "
+ejemplo = "\033[1;36mExample:\033[0m\n  python3 website-waf-detection-tool-by-darkboss1bd.py https://hackerone.com  "
 
 def mostrar_ayuda_completa():
     print(generar_banner())  
     print(uso)
     print(opciones)
     print(ejemplo)
-
-# ———————————————————————————————————————————————————————————————
-# 💀 DARKBOSS1BD — Elite Cyber Operator
-#
-# 📬 Telegram: https://t.me/darkvaiadmin
-# 🌐 Official Site: https://serialkey.top/
-#
-# 🔓 WAF Detection • Premium Keys • Ethical Hacking Tools
-# ———————————————————————————————————————————————————————————————
